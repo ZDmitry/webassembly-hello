@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WASM Sobel Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--<script type='text/javascript'>-->
+  <!--var Module = {};-->
+  <!--fetch('hello.wasm')-->
+    <!--.then(response => response.arrayBuffer())-->
+    <!--.then(buffer => {-->
+      <!--Module.wasmBinary = buffer;-->
+
+      <!--let script = document.createElement('script');-->
+      <!--script.src = "module.js";-->
+
+      <!--script.onload = () => {-->
+        <!--console.log("Emscripten boilerplate loaded.");-->
+        <!--console.log(Module);-->
+      <!--};-->
+
+      <!--document.body.appendChild(script);-->
+    <!--});-->
+<!--</script>-->
+
+<script type='text/javascript' src="hello.side.js">
+  fetchAndInstantiate('hello.wasm');
+</script>
+
+</body>
+
+</html>

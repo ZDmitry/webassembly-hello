@@ -11,7 +11,7 @@ const imports = {
       initial: 0,
       element: 'anyfunc'
     }),
-    _puts: (c) => console.log(asciiToString(c))
+    _puts: (c) => print(asciiToString(c))
   }
 };
 
@@ -22,6 +22,14 @@ function asciiToString(ptr) {
     if (!ch) return str;
     str += String.fromCharCode(ch);
   }
+}
+
+function print(str) {
+  let x = document.createElement("p");
+  let t = document.createTextNode(str);
+
+  x.appendChild(t);
+  document.body.appendChild(x);
 }
 
 function fetchAndInstantiate(url) {

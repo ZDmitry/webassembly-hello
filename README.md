@@ -8,3 +8,8 @@ http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html
 
 3. Start server:<br/>
 `node server.js`
+
+### Live Example
+
+You can check live example at:<br/>
+https://zdmitry.github.io/webassembly-hello/hello.html
